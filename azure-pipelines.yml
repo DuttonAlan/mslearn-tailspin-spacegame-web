@@ -40,7 +40,6 @@ stages:
       inputs:
         command: 'restore'
         projects: '**/*.csproj'
-
 - stage: BuildFinalProject
   jobs:
   - job: ReleaseProject
@@ -51,5 +50,3 @@ stages:
         command: 'build'
         arguments: '--no-restore --configuration Release'
         projects: '**/*.csproj'
-
-       
