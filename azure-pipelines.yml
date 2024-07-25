@@ -40,11 +40,12 @@ stages:
       inputs:
         command: 'restore'
         projects: '**/*.csproj'
+
 - stage: BuildFinalProject
   jobs:
   - job: ReleaseProject
     steps:
-     - task: DotNetCoreCLI@2
+    - task: DotNetCoreCLI@2
       displayName: 'Build the project - Release'
       inputs:
         command: 'build'
