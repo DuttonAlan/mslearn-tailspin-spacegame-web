@@ -43,7 +43,7 @@ stages:
 
 - stage: BuildFinalProject
   jobs:
-  - job: 
+  - job: ReleaseProject
     steps:
      - task: DotNetCoreCLI@2
       displayName: 'Build the project - Release'
